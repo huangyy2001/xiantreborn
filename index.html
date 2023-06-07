@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xiantreborn</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  
+</head>
+<body>
+  <header>
+    <h1>Xiantreborn</h1> 
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="slideshow-container">
+      <a href="about.html" class="mySlides fade">
+        <img src="images/p1.jpg" style="width:100%">
+        <div class="text">關於我</div>
+      </a>
+    
+      <a href="portfolio.html" class="mySlides fade">
+        <img src="images/home_p2.jpg" style="width:100%">
+        <div class="text">作品集</div>
+      </a>
+    
+      <a href="contact.html" class="mySlides fade">
+        <img src="images/home_p3.jpg" style="width:100%">
+        <div class="text">聯繫我們</div>
+      </a>
+    
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 xiantreborn | huangyy / Xiant</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>

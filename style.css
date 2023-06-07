@@ -1,0 +1,209 @@
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #e4e4e4;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      font-size: 14px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    /* Main Styles */
+    main {
+      padding: 20px;
+    }
+
+    .image-container {
+        float: left;
+        width: 50%;
+    }
+
+    .image-container img {
+        width: 512px;
+      }
+      
+    .text-container {
+        margin-top: 50px;
+        float: right;
+        width: 50%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        margin-right: 250px;
+        margin-left: 250px;
+    }
+      
+    .grid-item {
+        width: 100%;
+    }
+      
+    .grid-item img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+      
+
+    /* Contact Styles */
+    #contact {
+    text-align: center;
+    }
+  
+    #contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+  
+    #contact form {
+    display: inline-block;
+    text-align: left;
+    }
+
+    #contact img{
+      max-width: 32px;
+    }
+
+    /* 幻燈片 */
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* 上/下張 按鈕 */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    /* 定位 next 靠右 */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* 按鈕背景色 */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* 標題 */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    
+    /* 標記符號 */
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* 淡出动画 */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+      
+
+    /* Footer Styles */
+    footer {
+      clear: both;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      /* 手機版面的樣式 */
+      
+      .image-container {
+        flex-direction: column;
+      }
+
+      .image-container img {
+        width: 512px;
+      }
+      
+      .about-image {
+        margin-bottom: 20px;
+      } 
+  
+    }
