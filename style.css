@@ -210,13 +210,13 @@
         margin-top: 20px;
       }
 
+     
       .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 0;
+        margin-left: 0;
       }
+  
       
       .grid-item img {
         width: 100%;
