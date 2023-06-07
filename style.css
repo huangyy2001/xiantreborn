@@ -193,17 +193,21 @@
 
     @media (max-width: 768px) {
       /* 手機版面的樣式 */
-      
+    
       .image-container {
-        flex-direction: column;
+        width: 100%;
+        text-align: center;
       }
-
+    
       .image-container img {
-        width: 512px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
       }
-      
-      .about-image {
-        margin-bottom: 20px;
-      } 
-  
+    
+      .text-container {
+        width: 100%;
+        margin-top: 20px;
+      }
     }
+    
